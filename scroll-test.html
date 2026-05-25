@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Gladsal - керування комерційною нерухомістю в Україні та Європі" />
+    <title>Scroll Variants For Client Review</title>
+    <link rel="icon" type="image/png" href="./img/logo_g.png" />
+    <style>
+      :root {
+        --bg: #f7f7f5;
+        --surface: #ffffff;
+        --text: #151515;
+        --muted: #5f5f5f;
+        --line: #dddddd;
+        --link: #0b56d6;
+        --link-hover: #073a93;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: radial-gradient(circle at top right, #e8f0ff 0%, var(--bg) 38%), var(--bg);
+        color: var(--text);
+        font-family: 'Montserrat', 'PP Object Sans', 'Segoe UI', sans-serif;
+        line-height: 1.55;
+      }
+
+      .page {
+        width: min(980px, 100% - 32px);
+        margin: 32px auto 56px;
+      }
+
+      .hero {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 24px;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+        margin-bottom: 12px;
+      }
+
+      h2 {
+        font-size: clamp(1.2rem, 2vw, 1.45rem);
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      .site-link {
+        margin-top: 14px;
+      }
+
+      .site-link a {
+        color: var(--link);
+      }
+
+      .criteria {
+        margin: 18px 0 0;
+        padding-left: 18px;
+      }
+
+      .criteria li + li {
+        margin-top: 6px;
+      }
+
+      .quick-picks {
+        margin-top: 20px;
+        border-top: 1px dashed var(--line);
+        padding-top: 14px;
+      }
+
+      .quick-picks ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+      }
+
+      .quick-picks li + li {
+        margin-top: 5px;
+      }
+
+      .section {
+        margin-top: 18px;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 20px;
+      }
+
+      .variants {
+        list-style: none;
+        margin: 14px 0 0;
+        padding: 0;
+        display: grid;
+        gap: 10px;
+      }
+
+      .variants li {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 12px 14px;
+        background: #fbfbfb;
+      }
+
+      .variant-name {
+        font-weight: 700;
+      }
+
+      .variants a {
+        color: var(--link);
+        text-decoration: none;
+        word-break: break-all;
+      }
+
+      .variants a:hover,
+      .variants a:focus-visible,
+      .site-link a:hover,
+      .site-link a:focus-visible {
+        color: var(--link-hover);
+        text-decoration: underline;
+      }
+
+      @media (max-width: 680px) {
+        .page {
+          width: min(980px, 100% - 20px);
+          margin-top: 18px;
+          margin-bottom: 30px;
+        }
+
+        .hero,
+        .section {
+          padding: 16px;
+          border-radius: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body class="wrapper">
+    <main class="page">
+      <section class="hero">
+        <h1>Scroll Variants For Client Review</h1>
+        <p class="muted">Ниже ссылки на один и тот же сайт с разными вариантами поведения скролла.</p>
+        <p class="muted">Задача заказчика: открыть каждый вариант и выбрать 1-2 лучших по ощущениям.</p>
+        <p class="site-link">Тестовый сайт: <a href="https://tigriceo.github.io/gladsal-v2/" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/</a></p>
+
+        <div class="quick-picks">
+          <h2>Как оценивать</h2>
+          <ol class="criteria">
+            <li>Насколько скролл комфортный в обычной прокрутке.</li>
+            <li>Нет ли ощущения, что сайт слишком медленный.</li>
+            <li>Нет ли резких пролетов на быстрых движениях колесом.</li>
+            <li>Как ощущается переход между секциями.</li>
+          </ol>
+
+          <h2 style="margin-top: 16px">Быстрый выбор для заказчика</h2>
+          <p class="muted" style="margin-top: 8px">Если нужно выбрать быстро, сначала посмотреть только эти 4:</p>
+          <ul>
+            <li>Вариант 1 (контрольный)</li>
+            <li>Вариант 2 (мягче)</li>
+            <li>Вариант 3 (строже)</li>
+            <li>Вариант 11 (живой, но стабильный)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Варианты 1-4 (базовые профили)</h2>
+        <ol class="variants">
+          <li>
+            <div class="variant-name">1. Default (контрольный)</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=slow" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=slow</a>
+          </li>
+          <li>
+            <div class="variant-name">2. Soft (чуть мягче)</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=soft&lenisPreset=slow" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=soft&lenisPreset=slow</a>
+          </li>
+          <li>
+            <div class="variant-name">3. Strict (максимально контролируемый)</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=strict&lenisPreset=slow" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=strict&lenisPreset=slow</a>
+          </li>
+          <li>
+            <div class="variant-name">4. Glide (чуть более динамичный)</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=glide&lenisPreset=slow" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=glide&lenisPreset=slow</a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2>Варианты 5-8 (сбалансированные)</h2>
+        <ol class="variants" start="5">
+          <li>
+            <div class="variant-name">5. Balanced на default</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=balanced" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=balanced</a>
+          </li>
+          <li>
+            <div class="variant-name">6. Balanced на soft</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=soft&lenisPreset=balanced" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=soft&lenisPreset=balanced</a>
+          </li>
+          <li>
+            <div class="variant-name">7. Balanced на strict</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=strict&lenisPreset=balanced" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=strict&lenisPreset=balanced</a>
+          </li>
+          <li>
+            <div class="variant-name">8. Balanced на glide</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=glide&lenisPreset=balanced" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=glide&lenisPreset=balanced</a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2>Варианты 9-12 (точечная настройка для мыши)</h2>
+        <ol class="variants" start="9">
+          <li>
+            <div class="variant-name">9. Мягкий и спокойный</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=slow&lenisClamp=92&lenisDesktopLerp=0.062&lenisDesktopWheelMultiplier=0.58" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=slow&lenisClamp=92&lenisDesktopLerp=0.062&lenisDesktopWheelMultiplier=0.58</a>
+          </li>
+          <li>
+            <div class="variant-name">10. Контролируемый без пролетов</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=slow&lenisClamp=88&lenisDesktopLerp=0.056&lenisDesktopWheelMultiplier=0.52&lenisSpikeThreshold=140&lenisSpikeMultiplier=0.78" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=slow&lenisClamp=88&lenisDesktopLerp=0.056&lenisDesktopWheelMultiplier=0.52&lenisSpikeThreshold=140&lenisSpikeMultiplier=0.78</a>
+          </li>
+          <li>
+            <div class="variant-name">11. Более живой, но стабильный</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=slow&lenisClamp=108&lenisDesktopLerp=0.07&lenisDesktopWheelMultiplier=0.64&lenisSpikeThreshold=170&lenisSpikeMultiplier=0.86" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=slow&lenisClamp=108&lenisDesktopLerp=0.07&lenisDesktopWheelMultiplier=0.64&lenisSpikeThreshold=170&lenisSpikeMultiplier=0.86</a>
+          </li>
+          <li>
+            <div class="variant-name">12. Умеренно динамичный</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=glide&lenisPreset=balanced&lenisClamp=108&lenisDesktopLerp=0.074&lenisDesktopWheelMultiplier=0.66" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=glide&lenisPreset=balanced&lenisClamp=108&lenisDesktopLerp=0.074&lenisDesktopWheelMultiplier=0.66</a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2>Варианты 13-16 (trackpad сценарии)</h2>
+        <ol class="variants" start="13">
+          <li>
+            <div class="variant-name">13. Trackpad базовый</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=slow&trackpadTuning=1" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=slow&trackpadTuning=1</a>
+          </li>
+          <li>
+            <div class="variant-name">14. Trackpad мягче</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=soft&lenisPreset=slow&trackpadTuning=1&lenisTrackpadClamp=126&lenisTrackpadMultiplier=0.72" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=soft&lenisPreset=slow&trackpadTuning=1&lenisTrackpadClamp=126&lenisTrackpadMultiplier=0.72</a>
+          </li>
+          <li>
+            <div class="variant-name">15. Trackpad более быстрый</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=glide&lenisPreset=balanced&trackpadTuning=1&lenisTrackpadClamp=148&lenisTrackpadMultiplier=0.84" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=glide&lenisPreset=balanced&trackpadTuning=1&lenisTrackpadClamp=148&lenisTrackpadMultiplier=0.84</a>
+          </li>
+          <li>
+            <div class="variant-name">16. Trackpad tuning выключен (для сравнения)</div>
+            <a href="https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=slow&trackpadTuning=0" target="_blank" rel="noopener noreferrer">https://tigriceo.github.io/gladsal-v2/?lenisConfig=default&lenisPreset=slow&trackpadTuning=0</a>
+          </li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
