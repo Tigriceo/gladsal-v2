@@ -354,6 +354,25 @@
           </li>
         </ol>
       </section>
+
+      <script>
+        (() => {
+          const remoteBase = 'https://tigriceo.github.io/gladsal-v2/';
+          const isLocalHost = ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname);
+          const base = isLocalHost ? `${window.location.origin}/` : remoteBase;
+
+          document.querySelectorAll(`a[href^="${remoteBase}"]`).forEach((link) => {
+            const suffix = link.getAttribute('href').slice(remoteBase.length);
+            const nextUrl = `${base}${suffix}`;
+
+            link.setAttribute('href', nextUrl);
+
+            if (link.textContent && link.textContent.startsWith(remoteBase)) {
+              link.textContent = nextUrl;
+            }
+          });
+        })();
+      </script>
     </main>
   </body>
 </html>
