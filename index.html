@@ -8,8 +8,8 @@
     <meta name="description" content="Gladsal - керування комерційною нерухомістю в Україні та Європі" />
     <title>Gladsal</title>
     <link rel="icon" type="image/png" href="./img/logo_g.png" />
-    <link rel="stylesheet" crossorigin href="./assets/main-2026-07-07T08-31-33-400Z.Cgmor_BH.css">
-    <script type="module" crossorigin src="./assets/main-2026-07-07T08-31-33-400Z.Qw74Z8Zh.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-2026-07-09T09-46-45-947Z.DIlKdMw3.css">
+    <script type="module" crossorigin src="./assets/main-2026-07-09T09-46-45-947Z.Bt5P5zK3.js"></script>
   </head>
   <body class="wrapper">
     <header class="header z-5">
@@ -951,8 +951,7 @@
                 <div class="section-screens__screen section-screens__screen--5 rel fc-d" data-screen-type="table-slide" data-screen="5">
   <div class="section-screens--table-slide rel">
     <div class="section-screens__screen-container lh-12 ov-clip swiper" data-ls-slider='{"gap":"50", "direction": "vertical"}'>
-      <div class="section-screens--table-slide__nav rel f aic jcc gg-12-16">
-        <button type="button" class="section-screens--table-slide__nav-cell f aic gg-9-12 fs-9-13 font-secondary fwb ls-3 to-current-month" data-table-nav-btn="to-current-month">Поточний</button>
+      <div class="section-screens--table-slide__nav section-screens--table-slide__nav--show-active-month rel f aic jcc gg-12-16">
         <button type="button" class="section-screens--table-slide__nav-cell f aic gg-9-12 fs-9-13 font-secondary fwb ls-3" data-table-nav-btn="prev">
           <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -961,6 +960,7 @@
           </svg>
           <span>Січень</span>
         </button>
+        <button type="button" class="section-screens--table-slide__nav-cell f aic gg-9-12 fs-9-13 font-secondary fwb ls-3 to-current-month" data-table-nav-btn="to-current-month">Лютий</button>
         <button type="button" class="section-screens--table-slide__nav-cell f aic gg-9-12 fs-9-13 font-secondary fwb ls-3" data-table-nav-btn="next">
           <span>Березень</span>
           <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2217,7 +2217,7 @@
                 <div class="section-screens__screen section-screens__screen--7 rel" data-screen-type="chart-3d" data-screen="7">
   <div class="section-screens--chart fc fdc h100 w100">
     <canvas id="chart-3d"></canvas>
-    <span class="chart-percent" data-percent-from="2" data-percent-to="12" data-percent-speed="0.006">2%</span>
+    <span class="chart-percent" data-percent-from="2" data-percent-to="14" data-percent-speed="0.006" data-percent-fast-target="6" data-percent-fast-speed="0.085" data-percent-slow-speed="0.022">2%</span>
   </div>
 </div>
               </div>
@@ -2261,9 +2261,13 @@
             />
           </svg>
         </button>
-        <div class="device-block__image rel z-1" data-hover-split="true">
-          <img src="./img/device_white.webp" alt="пристрій" class="device-block__image-light abs" loading="lazy" />
-          <img src="./img/device_black.webp" alt="пристрій" class="device-block__image-dark abs" loading="lazy" />
+        <div class="device-block__image rel z-1" data-hover-split="true" data-content-type="image" data-has-alternate-media="true">
+          <div class="device-block__media device-block__media--primary abs">
+            <img src="./img/device_white.webp" alt="пристрій" class="device-block__media-asset" loading="lazy" />
+          </div>
+          <div class="device-block__media device-block__media--secondary abs">
+            <img src="./img/device_black.webp" alt="пристрій" class="device-block__media-asset" loading="lazy" />
+          </div>
         </div>
       </div>
     </div>
@@ -2397,7 +2401,7 @@
             </div>
           </div>
           <div class="video-slider__slide swiper-slide" data-slide-settings='{"navColor":"#ffffff", "navProgressBgColor": "#ffffff", "navProgressColor": "#000000"}'>
-            <div class="video-slider__slide-inner">
+            <div class="video-slider__slide-inner video-slider__slide-inner--rotate-mobile">
               <video class="video-slider__video js-lazy" playsinline autobuffer preload="metadata" data-load-delay="2600">
                 <source data-src="./video/3.mp4" type="video/mp4" />
               </video>
@@ -2422,12 +2426,12 @@
       </div>
       
       <div class="video-slider__nav abs f aic jcsb gg16">
-        <button type="button" class="video-slider__nav-btn btn-prev" aria-label="Минулий слайд">
+        <button type="button" class="video-slider__nav-btn btn-prev fc" aria-label="Минулий слайд">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 31.8447L0 0L6.94336 6.94238L6.94336 20.0635L26.79 0.216797L31.7324 5.16016L11.9932 24.8994L24.9014 24.8994L31.8447 31.8438L0 31.8447Z" fill="#ECECEC" />
           </svg>
         </button>
-        <button type="button" class="video-slider__nav-btn btn-next" aria-label="Наступний слайд">
+        <button type="button" class="video-slider__nav-btn btn-next fc" aria-label="Наступний слайд">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M31.8447 31.8447H0L6.94238 24.9014H20.0635L0.216797 5.05469L5.16016 0.112305L24.8994 19.8516V6.94336L31.8438 0L31.8447 31.8447Z" fill="#ECECEC" />
           </svg>
